@@ -1,0 +1,149 @@
+html{
+    font-size:100%;
+
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 1);
+
+    
+}
+input{
+    width:22vw;
+    height: 4vw;
+    position: relative;
+    background:transparent;
+    color:white;
+    border:10px solid white;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 3vw;
+    border: none;
+}
+input::placeholder{
+    color:white;
+}
+.equal{
+    background-color: rgba(255, 166, 0, 0.842);
+}
+.normal{
+    display: flex;
+    justify-content: space-around;
+
+}
+.ce,.MRC,.del{
+    position: relative;
+    /* right:0.4vw; */
+    background:#02040525;
+    cursor: pointer;
+    transition: 0.2s;
+    color:white;
+    /* border: none; */
+    margin:0;
+
+}
+
+.MRC{
+    position: relative;
+    /* right:1vw; */
+}
+
+.divide{
+    position: relative;
+    left:2.2vw;
+    color:white;
+}
+button{
+    width:4vw;
+    height: 4vw;
+    background:transparent; 
+    box-shadow: -5px -5px  14px rgba(255, 255, 255, 0.445); 
+    cursor: pointer;
+    transition: 0.2s;
+    color:rgb(15, 15, 15);
+    border: none;
+    border-radius: 50px;
+    margin-left: 2vw;
+}
+button:hover{
+    background-color: rgba(241, 139, 23, 0.836);
+}
+.main{
+    position: relative;
+    width:20vw;
+    height:30vh;
+    align-items: center;
+    text-align: center;
+    top:20vh;
+}
+
+.mainbutton{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#427D9D;
+    width:25vw;
+    height: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    right:3vw;
+    bottom:3vw;
+    
+}
+input{
+    margin-top: 2vw;
+}
+.sec1,.sec2,.sec3,.sec4{
+    position: relative;
+    right:.9vw;
+    
+}
+.sec4{
+    margin-bottom: 2vw;
+}
+.ope{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:11vw;
+    bottom:18.60vh;
+    
+}
+.button{
+    font-size:2vw;
+    
+}
+.del{
+    position: relative;
+    left:2vw;
+    font-size: 1.5vw;
+}
+.ce{
+    position: relative;
+    right:2vw;
+    font-size: 2vw;
+}
+.button:hover{
+    transform: scale(1.09);
+}
+
+.sub,.add,.divide,.mul{
+    background:#1648637c;
+    color:white;
+}
+.divide1{
+    background-color: rgba(255, 166, 0, 0.767);
+    color:white;
+}
+
+

@@ -1,0 +1,822 @@
+
+*{
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 100%;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("pxfuel (2).jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.main {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    height: 100%;
+}
+
+.port {
+    position: absolute;
+    margin: 0;
+    top: .5rem;
+    left: 2rem;
+    color: white;
+    font-size: 2rem;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar {
+    /* position: fixed; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 3rem;
+    
+    
+    /* background: rgba(0, 0, 0, 0.466); */
+
+}
+
+.navbar ul {
+    position: absolute;
+    margin-top: 1rem;
+    right: 2rem;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    
+    color: #ff3cff93;;
+    text-decoration: none;
+    /* background-color: rgba(221, 17, 119, 0.534); */
+    text-align: center;
+    transition: 0.3s;
+    height: 2.2vw;
+    border-radius: 5px;
+}
+
+.content {
+    position: absolute;
+}
+
+.text {
+    
+    width: 30vw;
+    height:20vw;
+    position: relative;
+    top: 12vw;
+    left: 17rem;
+    font-size: 1.8vw;
+    color: white;
+    
+}
+.icon {
+    position: relative;
+    text-decoration: none;
+    width:16vw;
+    height: 4vw; 
+    right:0.1vw;
+    top:1vw;
+    border-radius:10px;
+    text-align: center;
+    /* left:0.1vw; */
+    background-color:rgba(55, 170, 236, 0.603);
+    transition: all 0.3s ease-in-out;
+}
+.icon a{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    top:0.7vw;
+}
+.icon:hover{
+    transform: scale(1.1);
+    background-color:rgba(55, 170, 236, 0.986);
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: rgb(248, 247, 247);
+    background-color: rgb(6, 51, 49);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+button:hover {
+    filter: drop-shadow(0px 0px 10px white);
+    transition: 0.5s;
+    transform: scale(1.05);
+    font-style: bold;
+}
+
+span{
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+}
+
+.myname span {
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+}
+
+
+
+
+
+.fa-linkedin {
+    color: rgb(24, 106, 184);
+    background-color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: .3s;
+}
+
+.fa-facebook {
+    color: rgb(24, 106, 184);
+
+    background-color: rgb(240, 236, 236);
+    border-radius: 3.2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-facebook:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: .3s;
+}
+
+.fa-instagram {
+    color: black;
+    border-radius: 8px;
+    border-width: 10px;
+    background: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: .3s;
+}
+
+.fa-twitter {
+    color: rgb(24, 106, 184);
+
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-twitter:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: .3s;
+}
+
+.minimage {
+    position: relative;
+    width: 20vw;
+    left: 38vw;
+    bottom: 23vw;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 3px rgba(126, 204, 235, 0.712));
+}
+
+.about {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 12.5vw;
+    /* background-color: purple; */
+    bottom: 0;
+    top: 55vw;
+}
+
+.about h3 {
+    position: relative;
+    font-size: 4vw;
+    left: 15%;
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+
+}
+
+.about p {
+    position: absolute;
+    font-size: 1.4vw;
+    width: 50%;
+    left: 45%;
+    top: 12vw;
+    color: white;
+    font-weight: 200;
+
+}
+
+.about h1 {
+    position: relative;
+    top: 8vw;
+    right: 4vw;
+    color: white;
+    font-size: 2.4w;
+    background: linear-gradient(270deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.aboutimg {
+    position: relative;
+    width: 30vw;
+    height: 25vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(156, 35, 46);
+    top: 8vw;
+    left: 10vw;
+}
+
+.aboutshort {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    width: 55vw;
+    height: 40vh;
+    justify-content: center;
+    top: 38vw;
+    right: 16vw;
+}
+
+.aboutshort h4 {
+    margin: 0 1vw 0 0;
+    font-size: 1.2vw;
+}
+
+.three1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 22vw;
+    height: 10vw;
+    left: 13.5vw;
+    bottom: 6vw;
+}
+
+.three1 h4 {
+    margin-left: 1vw;
+}
+
+.three1 span {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.three2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 10vw;
+    left: 13vw;
+    bottom: 6vw;
+}
+
+.three2 h4 {
+    margin-left: 1vw;
+}
+
+.three2 span {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+
+.myskills {
+    position: absolute;
+    display: flex;
+    flex-direction: wrap;
+    /* background-color: #fa7e1e; */
+    width: 100vw;
+    height: 50vw;
+    background-color: none;
+    top: 100vw;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.myskills h3 {
+    position: absolute;
+    color: white;
+    left: 41%;
+    font-size: 4vw;
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+}
+
+.divs {
+    position: relative;
+    display: flex;
+    flex-direction: wrap;
+    
+    width: 100%;
+    height: 100%;
+    top: 11rem;
+    text-align: center;
+    /* justify-content: space-around; */
+    color: white;
+
+}
+
+.divs p {
+    font-size: 1.2vw;
+    width: 23vw;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.java h4 {
+    font-size: 3vw;
+    position: relative;
+    display: flex;
+    bottom: 3.5vw;
+}
+
+.web h4 {
+    font-size: 2.6vw;
+    position: relative;
+    display: flex;
+    bottom: 3.5vw;
+}
+
+.C h4 {
+    font-size: 2.6vw;
+    position: relative;
+    display: flex;
+    bottom: 1.8vw;
+}
+
+.C2 h4 {
+    font-size: 2.6vw;
+    position: relative;
+    display: flex;
+    bottom: 9.8vw;
+}
+.C2 h2{
+    position: relative;
+    font-size:4vw;
+    bottom:1.3vw;
+}
+
+.MySQL h4 {
+    font-size: 2.6vw;
+    position: relative;
+    display: flex;
+    bottom: 3vw;
+    
+}
+.python h4 {
+    font-size: 2.6vw;
+    position: relative;
+    display: flex;
+    bottom: 2.5vw;
+}
+
+.web {
+    font-size: 2vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    left: 69vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.web p {
+    position: relative;
+    /* bottom: 5vw; */
+    top:1vw;
+}
+.web:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+
+.java {
+    font-size: 2vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    top: 27vw;
+    left: 6vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    left: 38.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.java p {
+    position: relative;
+    /* bottom: 5vw; */
+    top:1vw;
+}
+
+.java:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+.C {
+    font-size: 2vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    left: 6vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    left: 38.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.C p {
+    position: relative;
+   
+}
+
+.C:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+
+.C2 {
+    font-size: 2vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    top: 27vw;
+    left: 7.5vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.C2 p {
+    position: relative;
+    bottom: 5.3vw;
+    
+}
+
+.C2:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.MySQL {
+    font-size: 1.9vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    left: 7.5vw;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.MySQL p {
+    position: relative;
+    overflow-wrap: break-word;
+    /* bottom: 1vw; */
+    /* left: 0.5vw; */
+    top:1vw;
+}
+
+.MySQL:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+.python {
+    font-size: 2vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 46vw;
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    top: 27vw;
+    
+    background-color: rgba(245, 229, 229, 0.089);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.python p {
+    position: relative;
+    /* bottom: 5vw; */
+    /* left: 0.5vw; */
+    top:1vw;
+}
+
+.python:hover {
+    background-color: #d629778f;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+}
+.services{
+  position: relative;
+  color:white;
+  /* background: cover; */
+  width:99vw;
+  height:50vw;
+  
+  text-align: center;
+  /* display: flex; */
+  top:175vw;
+ 
+}
+.serv{
+    position: relative;
+    font-size: 4vw;
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+
+}
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 6vw;
+    border-radius: 20px;
+    cursor: pointer;
+    
+} 
+.contain h2{
+    font-size: 2.5vw;
+}
+.contain div:hover{
+    background-color: #d629778f;
+    transform: scale(1.07);
+    
+
+}
+.webdesign{
+    font-size: 1.2vw;
+    margin:0 1vw 0 0;
+    background-color: rgba(245, 229, 229, 0.089);
+    width:23vw;
+    height: 23vw;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    
+}
+.uiux{
+    position: relative;
+    font-size: 1.2vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    
+}
+.Responsive{
+    position: relative;
+    font-size: 1.2vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    width:23vw;
+    height: 23vw;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    
+}
+.projects{
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 12vw;
+    width:100vw;
+    height: 40vw;
+    overflow-x: hidden;
+    
+    
+}
+.projects h1{
+    font-size: 4vw;
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+}
+
+.projectsub{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-top: 6vw;
+}
+.projectsub h4{
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+.projectsub div:hover{
+    background-color: #d629778f;
+    transform: scale(1.07);
+}
+.projectsub p{
+    position: relative;
+font-size: 1.2vw;
+bottom:1.3vw;
+}
+
+.spotify{
+    width:23vw;
+    height: 23vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.Netflix{
+    width:23vw;
+    height: 23vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.Netflix p{
+    position: relative;
+    bottom:2.5vw;
+}
+.Food{
+    width:23vw;
+    height: 23vw;
+    background-color: rgba(245, 229, 229, 0.089);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.contact{
+    position: relative;
+    display: block;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.788);
+    margin-top: 12vw;
+    
+}
+.contact h1{
+    font-size: 4vw;
+    background: linear-gradient(180deg, rgb(33, 190, 230), rgb(238, 68, 119));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px 0px 12px black);
+}
+.contactsub{
+    display: flex;
+    justify-content: space-around;
+}
+.contactsub h2{
+    font-size: 2.2vw;
+}
+.links i{
+    margin: 1vw 0.7vw 1vw 0.7vw;
+}
+.mobile p i{
+    margin-right: 1vw;
+    font-size: 1.4vw;
+}
+.ym{
+    position: relative;
+    left:3.5vw;
+}
+
+
+
+@media (max-width:990px) {
+    html {
+        font-size: 70%;
+
+    }
+
+}
+
+@media (max-width:780px) {
+    html {
+        font-size: 50%;
+    }
+
+    .aboutimg {
+        top: 8vw;
+        height: 25vw;
+    }
+}
+
+@media (max-width:570px) {
+    html {
+        font-size: 30%;
+
+    }
+
+    .aboutimg {
+        top: 4vw;
+        height: 20vw;
+    }
+    
+}
